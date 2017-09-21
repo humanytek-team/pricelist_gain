@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="product_pricelist_item_form_view_gain" model="ir.ui.view">
+            <field name="name">product.pricelist.item.gain.form</field>
+            <field name="model">product.pricelist.item</field>
+            <field name="inherit_id" ref="product.product_pricelist_item_form_view"/>
+            <field name="arch" type="xml">
+                <field name='price_min_margin' position="before">
+                    <label for="gain"/>
+                    <div class="o_row">
+                       <field name="gain"/>
+                       <span>%</span>
+                   </div>
+               </field>
+            </field>
+        </record>
+    </data>
+</odoo>
