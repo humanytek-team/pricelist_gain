@@ -20,7 +20,7 @@
 
 {
     'name': 'Pricelist Gain',
-    'version': '1.1',
+    'version': '1.2',
     'author': 'Humanytek',
     'website': 'http://humanytek.com',
     'depends': [
