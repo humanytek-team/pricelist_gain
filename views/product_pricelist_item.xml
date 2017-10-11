@@ -12,6 +12,15 @@
                        <field name="gain"/>
                        <span>%</span>
                    </div>
+                   <label for="iar"/>
+                   <div class="o_row">
+                      <field name="iar"/>
+                      <span>%</span>
+                  </div>
+                  <label for="term_months"/>
+                  <div class="o_row">
+                     <field name="term_months"/>
+                 </div>
                </field>
             </field>
         </record>

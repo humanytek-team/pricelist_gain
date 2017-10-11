@@ -7,6 +7,16 @@ class ProductPricelistItem(models.Model):
     gain = fields.Float(
         compute='_get_gain', readonly=False,
     )
+    iar = fields.Float()
+    term_months = fields.Float()
+    fir = fields.Float(
+        compute="_get_fir"
+    )
+
+    @api.one
+    @api.depends('iar', 'term_months')
+    def _get_fir(self):
+        self.fir = (self.iar/100)*self.term_months/12
 
     @api.depends('price_discount')
     @api.multi
